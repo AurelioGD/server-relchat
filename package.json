@@ -23,6 +23,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "module-alias": "^2.2.2",
     "morgan": "^1.10.0"
   },
   "_moduleAliases": {
@@ -30,5 +31,7 @@
     "@components": "./src/components",
     "@config": "./src/config"
   },
-  "_moduleDirectories": ["node_modules_custom"]
+  "_moduleDirectories": [
+    "node_modules_custom"
+  ]
 }

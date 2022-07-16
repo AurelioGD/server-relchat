@@ -41,6 +41,7 @@
     "@src": "./src",
     "@components": "./src/components",
     "@config": "./src/config",
+    "@consts": "./src/consts",
     "@models": "./src/models",
     "@router": "./src/router",
     "@server": "./src/server",

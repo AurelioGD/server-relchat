@@ -2,12 +2,12 @@ const express = require("express")
 const mongoose = require("mongoose")
 const { MONGO_URI } = require("@config/db")
 
+const apiRoutes = require("@router")
+
 const app = express()
 
 mongoose.connect(MONGO_URI)
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello world!</h1>")
-})
+app.use(apiRoutes)
 
 module.exports = app

@@ -3,7 +3,7 @@ const { String, ObjectId, Array, Date } = mongoose.Schema.Types
 
 const Chat = mongoose.model("Chat", {
   name: String,
-  owner: ObjectId,
+  owner: String,
   image: String,
   privacity: String,
   category: String,

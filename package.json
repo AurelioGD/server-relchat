@@ -47,7 +47,7 @@
     "@router": "./src/router",
     "@server": "./src/server",
     "@sockets": "./src/sockets",
-    "@utils": "./src/components"
+    "@utils": "./src/utils"
   },
   "_moduleDirectories": [
     "node_modules_custom"

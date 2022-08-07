@@ -16,6 +16,8 @@ mongoose.connect(MONGO_URI)
 
 app.use(cors(corsOptions))
 
+app.use(express.json())
+
 app.use(apiRoutes)
 
 module.exports = app

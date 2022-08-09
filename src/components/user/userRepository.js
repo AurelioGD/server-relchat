@@ -6,7 +6,7 @@ const createUser = async({ name, username, email }) => {
 
   const response = await user.save()
 
-    console.log(response)
+  return response
 }
 
 module.exports = {

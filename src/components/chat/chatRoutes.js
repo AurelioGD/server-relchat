@@ -1,11 +1,13 @@
 const { Router } = require("express")
-const { GetPublicChatsController } = require("./chatControllers")
+const { publicChatsController, chatMembersController } = require("./chatControllers")
 const ROUTES = require("@consts/routes")
 
-const { PUBLIC_CHATS } = ROUTES
+const { CHAT } = ROUTES
+const { PUBLIC_CHATS, MEMBERS } = CHAT
 
 const router = Router()
 
-router.get(PUBLIC_CHATS, GetPublicChatsController)
+router.get(PUBLIC_CHATS, publicChatsController)
+router.post(MEMBERS, chatMembersController)
 
 module.exports = router

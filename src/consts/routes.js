@@ -1,6 +1,10 @@
 const ROUTES = {
-    PUBLIC_CHATS: "/public-chats",
-    USER: "/user"
+    USER: "/user",
+    CHAT: {
+        ROOT:"/chat",
+        PUBLIC_CHATS: "/chat/public-chats",
+        MEMBERS:"/chat/:chatId/members",
+    }
 }
 
 module.exports = ROUTES

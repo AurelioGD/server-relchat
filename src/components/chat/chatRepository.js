@@ -5,6 +5,12 @@ const getAllChats = async () => {
   return allChats
 }
 
+const addMemberAChat = async (chatId, newMemberId) => {
+  const res = await Chat.updateOne({_id: chatId}, {$push:{members: newMemberId}})
+  return res
+}
+
 module.exports = {
   getAllChats,
+  addMemberAChat
 }
